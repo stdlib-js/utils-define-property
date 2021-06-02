@@ -26,8 +26,8 @@ limitations under the License.
 
 ## Installation
 
-``` bash
-$ npm install @stdlib/utils-define-property
+```bash
+npm install @stdlib/utils-define-property
 ```
 
 </section>
