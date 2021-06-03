@@ -76,5 +76,9 @@
     "descriptor",
     "writable",
     "configurable"
-  ]
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
 }
