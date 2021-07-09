@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-define-property",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Define (or modify) an object property.",
   "license": "Apache-2.0",
   "author": {
