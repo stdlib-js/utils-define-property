@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-define-property",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Define (or modify) an object property.",
   "license": "Apache-2.0",
   "author": {
@@ -37,7 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/string-format": "^0.0.3",
+    "@stdlib/string-format": "^0.1.0",
     "@stdlib/types": "^0.0.14"
   },
   "devDependencies": {
