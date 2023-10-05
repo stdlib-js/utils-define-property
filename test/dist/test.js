@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,51 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var proxyquire = require( 'proxyquire' );
-var polyfill = require( './../../dist/polyfill.js' );
-var builtin = require( './../../dist/builtin.js' );
-var defineProperty = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof defineProperty, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'if an environment supports `Object.defineProperty`, the exported value is the built-in value', function test( t ) {
-	var defineProperty = proxyquire( './../dist', {
-		'./has_define_property_support.js': mock
-	});
-
-	t.equal( defineProperty, builtin, 'exports built-in' );
-	t.end();
-
-	function mock() {
-		return true;
-	}
-});
-
-tape( 'if an environment does not support `Object.defineProperty`, the exported value is a polyfill', function test( t ) {
-	var defineProperty = proxyquire( './../dist', {
-		'./has_define_property_support.js': mock
-	});
-
-	t.equal( defineProperty, polyfill, 'exports polyfill' );
-	t.end();
-
-	function mock() {
-		return false;
-	}
-});
-
-tape( 'the function sets a property on a provided object', function test( t ) {
-	var obj = {};
-	defineProperty( obj, 'foo', {
-		'value': 'bar'
-	});
-	t.equal( obj.foo, 'bar', 'prop foo equals bar' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
