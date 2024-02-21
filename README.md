@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@deno/mod.js';
+import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@v0.2.1-deno/mod.js';
 ```
 
 #### defineProperty( obj, prop, descriptor )
@@ -91,7 +91,7 @@ A property `descriptor` has the following optional properties:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@deno/mod.js';
+import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@v0.2.1-deno/mod.js';
 
 function Foo( name ) {
     if ( !(this instanceof Foo) ) {
