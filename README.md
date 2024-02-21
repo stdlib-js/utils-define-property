@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@esm/index.mjs';
+import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@v0.2.1-esm/index.mjs';
 ```
 
 #### defineProperty( obj, prop, descriptor )
@@ -96,7 +96,7 @@ A property `descriptor` has the following optional properties:
 <body>
 <script type="module">
 
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@esm/index.mjs';
+import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@v0.2.1-esm/index.mjs';
 
 function Foo( name ) {
     if ( !(this instanceof Foo) ) {
