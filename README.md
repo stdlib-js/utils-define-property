@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-define-property/tags). For example,
+
+```javascript
 import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@v0.2.2-esm/index.mjs';
 ```
 
@@ -96,7 +101,7 @@ A property `descriptor` has the following optional properties:
 <body>
 <script type="module">
 
-import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@v0.2.2-esm/index.mjs';
+import defineProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-property@esm/index.mjs';
 
 function Foo( name ) {
     if ( !(this instanceof Foo) ) {
